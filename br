@@ -1,0 +1,75 @@
+## JavaFX Tip Calculator App
+
+You can build a Tip Calculator using JavaFX Scene Builder without writing code to design the GUI. The app allows users to enter a bill amount, select a tip percentage, and view the tip and total bill.
+
+## 1. GUI Design
+
+# Tip Calculator
+
+Calculate your tip and total bill
+
+Bill Amount (₹)
+
+Tip Percentage
+
+5%
+
+10%
+
+15%
+
+20%
+
+Number of People
+
+Calculate TipThis is an interactive demonstration of the app's behavior.
+
+## 2. JavaFX Components Required
+
+| Component     | Purpose                             |
+| ------------- | ----------------------------------- |
+| `Label`       | Displays headings and field names   |
+| `TextField`   | Accepts the bill amount             |
+| `RadioButton` | Selects the tip percentage          |
+| `ToggleGroup` | Allows one tip percentage at a time |
+| `Spinner`     | Selects the number of people        |
+| `Button`      | Calculates the tip                  |
+| `Label`       | Displays the tip and total bill     |
+| `VBox`        | Arranges components vertically      |
+| `HBox`        | Arranges components horizontally    |
+
+## 3. How to Build It in Scene Builder
+
+[SDE | Javafx](https://images.openai.com/static-rsc-4/plaC9EVroq5oyv2KX8D4ZmSYrBHFjamIqdoJHUoBgjOmbSGs2OPTC6RU_REjN7OVQIL42HXGt16CrWuX3CVzL1oPA-EI9ONgEnL2H8_PMmW1oL_dHzVHD4-htIcrqCoCB8PNaKoDawI9eQXK-aeLqXeKcnW5WcMwORVL7sZ23m4?purpose=inline)
+
+Step 1: Create the layout
+
+Open Scene Builder and drag a `VBox` into the main window. Set its spacing and padding.
+
+[Bekwam Courses - Custom JavaFX Dialog Layout](https://images.openai.com/static-rsc-4/e_sKKrbz0pXkzIroMAFL-hJ58YXnIaF1k0zuZosXroP-CPK_0mHiMiWjQu6G5tyI1GkCnARMmJUkBtE6817LFR56cWviwiCc7Kmrtp2XHZxSoCQCO5lMI9qS60T7s1HnlYvNjfgqNG-94R4s5eGXFMg7N_SatnohCx2SAuTf7jk?purpose=inline)
+
+Step 2: Add input components
+
+Add labels, a `TextField` for the bill amount, radio buttons for 5%, 10%, 15%, and 20%, and a `Spinner` for the number of people.
+
+[Hướng dẫn lập trình JavaFX cho người mới bắt đầu - Hello JavaFX | openplanning.net](https://images.openai.com/static-rsc-4/ho0vIuHd9xQwyvNcYLQfQ7W6MwCl_Eo-YhMyvuhk_nWcAjbniX4fkf07zY3sUNJ4a6Oc0saCLTxDkXDCChQNqB7cqGJyEY7G29Fu4TeXRYtF1hdYb1pOQ60qnCE4SxaYk3BGhTQ_EWBK2oaAObDO1YVjlRWZt_3knA08870IQJU?purpose=inline)
+
+Step 3: Add the Calculate button
+
+Add a `Button` with the text `Calculate Tip` and labels for displaying the calculated tip and total bill.
+
+[How to Create a JavaFX GUI using Scene Builder in NetBeans](https://images.openai.com/static-rsc-4/gbi2KANca4ZfEO9ax239detzogVnRuUkt1Axpagcq9XXSmvo4AmGue-JymMyxWTp8rf3Az7TIs135vd5-sxnmD_VEVMUFnrndFPZ3wz56JzTQJJPxIbq7vNTer-1nUxHEATTETXO90-Cb12nMbGo70nefcvV1hHzOu2QRxfoj_4?purpose=inline)
+
+Step 4: Handle user interactions
+
+In the button's Code → On Action property, assign a handler method. The calculation logic must be implemented in a Java controller class; Scene Builder creates the interface but does not generate the calculation logic automatically.
+
+## 4. Formula Used
+
+- Tip Amount = Bill Amount × Tip Percentage / 100
+- Total Bill = Bill Amount + Tip Amount
+- Amount Per Person = Total Bill / Number of People
+
+## 5. Result
+
+The Tip Calculator GUI accepts user input, responds to button clicks, calculates the tip amount, and displays the total bill and per-person amount. A working JavaFX application requires a Java controller to process these interactions.
